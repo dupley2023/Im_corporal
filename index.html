@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+    <main>
+        <div class="unit-selector">
+            <label for="unit">Seleccione unidades:</label>
+            <select id="unit">
+                <option value="metric">Métrico (kg, cm)</option>
+                <option value="imperial">Imperial (lb, in)</option>
+            </select>
+        </div>
+        <div class="input-fields">
+            <label for="height">Altura:</label>
+            <input type="number" id="height" placeholder="Altura" required>
+            <span id="height-unit">cm</span>
+
+            <label for="weight">Peso:</label>
+            <input type="number" id="weight" placeholder="Peso" required>
+            <span id="weight-unit">kg</span>
+        </div>
+        <button id="calculate">Calcular IMC</button>
+        <div class="result">
+            <p>Su IMC es: <span id="result">--</span></p>
+            <p>Clasificación de peso: <span id="classification">--</span></p>
+            <p>Rango de peso saludable: <span id="healthy-range">--</span></p>
+        </div>
+    </main>
+    <script src="func.js"></script>
+</body>
+</html>
